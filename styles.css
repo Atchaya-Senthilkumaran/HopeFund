@@ -1,0 +1,550 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: #00aaff;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00aaff;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: url('ch1.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.home-text {
+    max-width: 500px;
+}
+
+.home-text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.home-text .btn {
+    background-color: #00aaff;
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.home-text .btn:hover {
+    background-color: #007acc;
+}
+
+.home-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* About Section */
+/* General Styling */
+.about {
+    background-color: #f4f9fb;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.about-header {
+    margin-bottom: 40px;
+}
+
+.about-header h2 {
+    font-size: 3em;
+    color: #004f73;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.about-header p {
+    font-size: 1.3em;
+    color: #00688b;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Container for About Us Content */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* About Content Section */
+.about-content h3 {
+    font-size: 2.4em;
+    color: #004f73;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service h4 {
+    font-size: 1.5em;
+    color: #004f73;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Call-to-Action Section */
+.about-cta {
+    background-color: #00688b;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.about-cta h3 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+}
+
+.about-cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff5f57;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff2d1d;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-header h2 {
+        font-size: 2.6em;
+    }
+
+    .about-content h3 {
+        font-size: 2em;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-cta h3 {
+        font-size: 2.2em;
+    }
+
+    .about-cta p {
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-header h2 {
+        font-size: 2.2em;
+    }
+
+    .about-content h3 {
+        font-size: 1.8em;
+    }
+
+    .about-cta h3 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+/* Donation Causes Section */
+.donate {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.donate h2 {
+    font-size: 40px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.cause-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    background-color: #eaf4f7;
+    padding: 50px 20px;
+    text-align: center;
+    color: #2a3d5a;
+    font-family: Arial, sans-serif;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #1d2d49;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #5b6c7b;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #1d2d49;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b0c7d1;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #005a8d;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #003c56;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .contact h2 {
+        font-size: 2em;
+    }
+
+    .contact-container {
+        padding: 0 20px;
+    }
+
+    .contact p {
+        font-size: 1em;
+    }
+
+    .input-group input, .input-group textarea {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact h2 {
+        font-size: 1.8em;
+    }
+
+    .contact p {
+        font-size: 0.9em;
+    }
+
+    .contact-container {
+        padding: 0 10px;
+    }
+
+    .input-group input, .input-group textarea {
+        font-size: 0.9em;
+    }
+
+    .submit-btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 40px;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #003366;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        display: block;
+        color: white;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar.open {
+        display: block;
+    }
+
+    .cause-cards {
+        flex-direction: column;
+    }
+}
+
+/* Modal styles for donation form */
+.donation-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.modal-content h3 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-donate {
+    display: block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.close-btn {
+    text-align: right;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+}
+
+

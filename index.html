@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopeFund</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Hope<span>Fund</span></div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#donate">Donate</a>
+            <a href="#contact">Contact</a> 
+        </nav>
+        <div id="menu-icon">&#9776;</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="home">
+        <div class="home-text">
+            <h1>Make a Difference with Your Donation</h1>
+            <p>Support those in need by contributing to life-changing projects.</p>
+            <a href="javascript:void(0);" class="btn" id="donate-btn">Donate Now</a>
+        </div>
+        <div class="home-img">
+            <img src="ch1.jpg" alt="Charity">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-header">
+            <h2>Welcome to HopeFund</h2>
+            <p>Your donation, their future.</p>
+        </div>
+    
+        <div class="about-container">
+            <div class="about-content">
+                <h3>Our Mission</h3>
+                <p>HopeFund is a global charity platform that empowers individuals and organizations to join hands for sustainable development. Our mission is to fund essential projects focused on education, healthcare, clean water, and emergency relief in underserved communities worldwide. By uniting compassionate people, we aim to drive impactful change in the lives of thousands.</p>
+    
+                <h3>Our Vision</h3>
+                <p>Our vision is a world where no community is left behind, where every individual has access to the resources they need to thrive. We are building a future where compassion, education, and health are the foundations of growth and prosperity.</p>
+    
+                <h3>What We Do</h3>
+                <p>We are committed to supporting projects that make a tangible difference in the lives of those who need it most. Our efforts include:</p>
+                <div class="services">
+                    <div class="service">
+                        <h4>Education</h4>
+                        <p>Funding schools, scholarships, and educational resources for children and adults in underserved areas.</p>
+                    </div>
+                    <div class="service">
+                        <h4>Healthcare</h4>
+                        <p>Providing life-saving medical supplies and healthcare services in rural and impoverished regions.</p>
+                    </div>
+                    <div class="service">
+                        <h4>Emergency Relief</h4>
+                        <p>Contribute to providing emergency relief in times of natural disasters.</p>
+                    </div>
+                    <div class="service">
+                        <h4>Community Development</h4>
+                        <p>Supporting clean water, sustainable housing, and infrastructure projects that empower local communities.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="about-cta">
+                <h3>Join the Movement</h3>
+                <p>"Every contribution, no matter the size, has the power to create lasting change. Together, we can uplift communities and pave the way for a brighter, more hopeful future for all."</p>
+                <a href="javascript:void(0);" class="cta-button" id="donate-btn-about">Make a Donation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Causes Section -->
+    <section id="donate" class="donate">
+        <h2>Our Causes</h2>
+        <div class="cause-cards">
+            <div class="card">
+                <img src="cause1.jpg" alt="Cause 1">
+                <div class="card-content">
+                    <h3>Clean Water Initiative</h3>
+                    <p>Help us provide clean drinking water to underserved communities.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cause2.jpg" alt="Cause 2">
+                <div class="card-content">
+                    <h3>Education for All</h3>
+                    <p>Support educational programs to give children access to quality education.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cause3.jpg" alt="Cause 3">
+                <div class="card-content">
+                    <h3>Emergency Relief</h3>
+                    <p>Contribute to providing emergency relief in times of natural disasters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! If you have any questions or would like more information about how you can get involved, please don't hesitate to reach out.</p>
+            <form action="#">
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 HopeFund. All rights reserved.</p>
+    </footer>
+
+    <!-- Donation Modal -->
+    <div class="donation-modal" id="donationModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h3>Make a Donation</h3>
+            <form id="donationForm">
+                <div class="input-group">
+                    <label for="donor-name">Name</label>
+                    <input type="text" id="donor-name" name="donor-name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="donor-email">Email</label>
+                    <input type="email" id="donor-email" name="donor-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="donor-phone">Phone Number</label>
+                    <input type="tel" id="donor-phone" name="donor-phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input-group">
+                    <label for="donation-amount">Amount</label>
+                    <input type="number" id="donation-amount" name="donation-amount" placeholder="Enter donation amount" required>
+                </div>
+                <button type="submit" class="btn-donate">Proceed to Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
